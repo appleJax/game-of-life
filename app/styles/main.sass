@@ -1,0 +1,160 @@
+body, html
+  background: lighten(blue, 35%)
+  font-family: 'Acme', sans-serif
+  margin: 0
+  overflow-x: hidden
+  padding: 0
+
+.outer-container
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.ref-link
+  background: #333
+  font-size: 24px
+  margin-bottom: 15px
+  padding: 15px
+  text-align: center
+  text-shadow: 1px 1px 4px lighten(blue, 10%)
+  width: 100vw
+  a
+    color: lighten(blue, 33%)
+    text-decoration: none
+
+.inner-container
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: fit-content
+
+.board
+  background: lighten(blue, 10%)
+  border-radius: 10px
+  padding: 12px 15px 16px 15px
+  width: fit-content
+
+.row
+  list-style: none
+  margin: 0
+  margin-bottom: -8px
+  padding: 0
+
+.cell
+  background: lighten(blue, 12%)
+  border: 1px solid lighten(blue, 10%)
+  display: inline-block
+  font-size: 10px
+  height: 10px
+  width: 10px
+  &:hover
+    cursor: pointer
+
+.alive--new
+  background: rgba(lighten(blue, 30%), 0.5)
+
+.alive--old
+  background: rgba(lighten(blue, 35%), 0.5)
+
+.bar
+  align-items: center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-bottom: 10px
+
+.bar--status
+  background: lighten(blue, 33%)
+  border-radius: 10px
+  box-sizing: border-box
+  box-shadow: 0 0 10px lighten(blue, 30%) inset
+  margin-bottom: 0
+  padding: 20px 15px
+  width: 100%
+
+.controls
+  box-sizing: border-box
+  justify-content: center
+  padding: 15px 20px
+  width: 100%
+
+.hint
+  background: lighten(blue, 38%)
+  border-radius: 10px
+  box-shadow: 0 0 15px lighten(blue, 20%) inset
+  color: lighten(blue, 14%)
+  line-height: 1.5em
+  font-size: 20px
+  max-width: 540px
+  padding: 20px
+  text-shadow: 1px 1px lighten(blue, 35%)
+  white-space: wrap
+
+button
+  background: darken(white, 10%)
+  border: none
+  border-radius: 5px
+  box-shadow: 0 0 15px blue inset, 1px 1px 1px lighten(blue, 15%)
+  color: lighten(blue, 10%)
+  font-family: 'Acme', sans-serif
+  font-size: 16px
+  margin: 0 15px
+  padding: 10px 20px
+  text-shadow: 1px 1px darken(white, 25%)
+  width: 100px
+  &:focus
+    outline: none
+  &:hover
+    background: darken(white, 14%)
+    cursor: pointer
+  &:active
+    background: lighten(blue, 35%)
+
+.btn--status
+  margin: 0 5px
+  width: fit-content
+
+.start
+  background: lighten(blue,25%)
+  color: lighten(blue, 48%)
+  text-shadow: 1px 1px #333
+  width: 75px
+  &:hover
+    background: lighten(blue, 22%)
+  &:active
+    background: lighten(blue, 28%)
+
+.btn--disabled
+  background: lighten(blue, 30%)
+  box-shadow: none
+  color: lighten(blue, 40%)
+  text-shadow: none
+  &:hover
+    background: lighten(blue, 30%)
+    cursor: default
+
+.btn--active
+  background: lighten(blue, 35%)
+  text-shadow: 1px 1px darken(white, 20%)
+  &:hover
+    background: lighten(blue, 35%)
+    cursor: default
+
+.gen-counter
+  color: lighten(blue, 15%)
+  font-family: 'Acme', sans-serif
+  font-size: 26px
+  margin-left: 15px
+  text-shadow: 1px 1px darken(blue, 10%)
+  width: 150px
+
+.picker-label
+  color: lighten(blue, 15%)
+  font-size: 26px
+  margin-right: 10px
+  text-shadow: 1px 1px lighten(blue, 10%)
+
+.spacer
+  flex-grow: 2
