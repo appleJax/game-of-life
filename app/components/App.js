@@ -20,7 +20,7 @@ class App extends PureComponent {
           <StatusBar />
           <Board />
           <ControlBar />
-          <Elm src={ElmHint} />
+          <Elm src={ElmHint}  />
         </div>
       </div>
     )
