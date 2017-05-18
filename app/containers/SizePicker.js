@@ -43,7 +43,7 @@ class SizePicker extends PureComponent {
 
 SizePicker = connect(
   (state) => ({
-    size: state.size.x
+    size: Object.keys(state.board[0]).length
   }),
   { setSize }
 )(SizePicker)

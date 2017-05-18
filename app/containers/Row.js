@@ -39,7 +39,7 @@ class Row extends PureComponent {
 }
 Row = connect(
   (state) => ({
-    x: state.size.x,
+    x: Object.keys(state.board[0]).length,
     board: state.board
   }),
   { toggleCell }

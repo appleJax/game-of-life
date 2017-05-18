@@ -11,10 +11,6 @@ const rows    = 30,
 
 const preloadedState = {
         board: initialState,
-        size: {
-          x: columns,
-          y: rows
-        },
         speed: 130,
         generations: 0,
         running: true,

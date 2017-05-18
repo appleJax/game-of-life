@@ -35,7 +35,7 @@ class Board extends PureComponent {
 
 Board = connect(
   (state) => ({
-   rows: state.size.y,
+   rows: Object.keys(state.board).length,
    speed: state.speed,
    running: state.running
   })

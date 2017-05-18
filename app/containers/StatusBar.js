@@ -61,8 +61,8 @@ class StatusBar extends PureComponent {
 StatusBar = connect(
   (state) => ({
     running: state.running,
-    x: state.size.x,
-    y: state.size.y
+    x: Object.keys(state.board[0]).length,
+    y: Object.keys(state.board).length
   }),
   {
     toggleRun,
