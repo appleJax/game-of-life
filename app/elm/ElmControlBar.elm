@@ -102,7 +102,7 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div []
+    div [ class "controls" ]
         [ div [ class "bar" ]
             [ span [ class "picker-label" ] [ text "Board Size:" ]
             , div [] (makeButtons model [ ( "Small", SetSize Sm ), ( "Medium", SetSize Md ), ( "Large", SetSize Lg ) ])

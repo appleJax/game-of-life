@@ -21,10 +21,10 @@ const board = (state = {}, action) => {
       return action.board
 
     case CLEAR_BOARD:
-      const boardSize = store.getState().size
+      const board = store.getState().board
       return newBoard(
-        boardSize.x,
-        boardSize.y
+        Object.keys(board[0]).length,
+        Object.keys(board).length
       )
 
     case TOGGLE_CELL:

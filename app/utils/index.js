@@ -4,11 +4,16 @@ export const rand = () =>
   Math.round(Math.random() - 0.25)
 
 export const newBoard = (x, y) => {
-  let newArr = Array(y)
-  for (let i = 0; i < y; i++)
-    newArr[i] = Array(x).fill(0)
+  const newBoard = {}
 
-  return newArr
+  for (let i = 0; i < y; i++) {
+  let boardRow = {}
+  for (let j = 0; j < x; j++)
+    boardRow[j] = 0
+
+  newBoard[i] = boardRow
+}
+ return newBoard
 }
 
 export const fillBoard = (x, y) => {
